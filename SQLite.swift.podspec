@@ -28,7 +28,6 @@ Pod::Spec.new do |s|
     ss.source_files = 'Sources/{SQLite,SQLiteObjc}/**/*.{c,h,m,swift}'
     ss.exclude_files = 'Sources/**/Cipher.swift'
     ss.private_header_files = 'Sources/SQLiteObjc/*.h'
-    ss.library = 'sqlite3'
 
     ss.test_spec 'tests' do |test_spec|
       test_spec.resources = 'Tests/SQLiteTests/fixtures/*'
